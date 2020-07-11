@@ -32,7 +32,8 @@ platform :ios do
     )
     update_project_team(
       path: ENV["PROJECT_PATH"],
-      teamid: ENV["TEAM_ID"]
+      teamid: ENV["TEAM_ID"],
+      targets: "SpaiaAiKeiba"
     )
 #     gym(
 #       export_options: {
