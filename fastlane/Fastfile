@@ -26,7 +26,8 @@ platform :ios do
     update_project_provisioning(
       xcodeproj: ENV["PROJECT_PATH"],
       profile: "ios-build.mobileprovision",
-      code_signing_identity: ENV["CODE_SIGNING_IDENTITY"]
+      code_signing_identity: ENV["CODE_SIGNING_IDENTITY"],
+      target_filter: ".*Model.*"
     )
     update_project_team(
       path: ENV["PROJECT_PATH"],
