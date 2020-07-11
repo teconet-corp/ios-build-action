@@ -27,7 +27,7 @@ platform :ios do
       xcodeproj: ENV["PROJECT_PATH"],
       profile: "ios-build.mobileprovision",
       code_signing_identity: ENV["CODE_SIGNING_IDENTITY"],
-      target_filter: ".*SpaiaAiKeibaModel.?"
+      target_filter: ".*SpaiaAiKeiba$"
     )
     update_project_team(
       path: ENV["PROJECT_PATH"],
