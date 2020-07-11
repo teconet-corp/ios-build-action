@@ -20,15 +20,15 @@ platform :ios do
     install_provisioning_profile(
       path: "ios-build.mobileprovision"
     )
-    disable_automatic_code_signing(
-      path: ENV["PROJECT_PATH"]
-    )
-    update_project_provisioning(
-      xcodeproj: ENV["PROJECT_PATH"],
-      profile: "ios-build.mobileprovision",
-      code_signing_identity: ENV["CODE_SIGNING_IDENTITY"],
-      target_filter: ".*SpaiaAiKeiba"
-    )
+#     disable_automatic_code_signing(
+#       path: ENV["PROJECT_PATH"]
+#     )
+#     update_project_provisioning(
+#       xcodeproj: ENV["PROJECT_PATH"],
+#       profile: "ios-build.mobileprovision",
+#       code_signing_identity: ENV["CODE_SIGNING_IDENTITY"],
+#       target_filter: ".*SpaiaAiKeiba"
+#     )
     update_project_team(
       path: ENV["PROJECT_PATH"],
       teamid: ENV["TEAM_ID"]
