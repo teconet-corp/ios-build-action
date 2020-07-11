@@ -21,7 +21,8 @@ platform :ios do
       path: "ios-build.mobileprovision"
     )
     disable_automatic_code_signing(
-      path: ENV["PROJECT_PATH"]
+      path: ENV["PROJECT_PATH"],
+      targets: "SpaiaAiKeiba"
     )
     update_project_provisioning(
       xcodeproj: ENV["PROJECT_PATH"],
